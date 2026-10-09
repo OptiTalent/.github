@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 一般讨论请去 Slack
+    url: https://slack.com/app_redirect
+    about: 需求、Bug 和任务请用模板提交；聊出结论后请回写到对应 Issue

@@ -1,0 +1,25 @@
+name: 周复盘 / Retro
+description: 每周五复盘
+title: "Retro: 第 N 周"
+labels: ["retro"]
+body:
+  - type: textarea
+    id: shipped
+    attributes:
+      label: 本周完成了什么（Done 清单）
+  - type: textarea
+    id: slipped
+    attributes:
+      label: 没完成的和原因
+  - type: textarea
+    id: good
+    attributes:
+      label: 做得好的
+  - type: textarea
+    id: bad
+    attributes:
+      label: 卡住或浪费时间的
+  - type: textarea
+    id: actions
+    attributes:
+      label: 下周改进（最多 3 条，写具体动作和负责人）

@@ -1,0 +1,25 @@
+name: 任务 / Chore
+description: 技术债、重构、基础设施、文档等不直接面向用户的工作
+labels: ["chore"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: 要做什么
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么现在做
+      description: 不做会有什么影响
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 完成标准
+      placeholder: |
+        - [ ] ……
+    validations:
+      required: true

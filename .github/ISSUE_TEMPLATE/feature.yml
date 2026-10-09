@@ -1,0 +1,52 @@
+name: 需求 / Feature
+description: 提出一个新需求（由产品经理填写）
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请尽量填完整。验收标准写不清楚的需求，不会进入 Ready 状态。
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景与问题
+      description: 为什么要做？解决谁的什么问题？
+    validations:
+      required: true
+  - type: textarea
+    id: story
+    attributes:
+      label: 用户故事
+      placeholder: 作为【角色】，我希望【做什么】，以便【达到什么目的】
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收标准
+      description: 逐条列出，要具体、可检验。没有技术背景的人读完，也应该能判断做对了没有。
+      placeholder: |
+        - [ ] 输入错误密码 3 次后，账号锁定 15 分钟
+        - [ ] 锁定期间页面显示提示文案
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: 不包含的内容
+      description: 明确这次不做什么，防止范围蔓延
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 优先级
+      options:
+        - P0 必须马上做
+        - P1 本周期要做
+        - P2 有空再做
+    validations:
+      required: true
+  - type: textarea
+    id: refs
+    attributes:
+      label: 参考资料
+      description: 设计稿、竞品、相关 Issue 或文档链接（可选）

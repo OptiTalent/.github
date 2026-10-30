@@ -52,7 +52,7 @@ Milestone（阶段目标）
 
 ## 6. 提 PR（开发）
 
-- 一个 PR 对应一个 Issue，描述里写 `Closes #编号`
+- 一个 PR 对应一个 Issue，描述里写 `Closes #编号`。没有 Issue 的杂项（CI、依赖、文档、工具）可以直接提 PR，在模板的"关联 Issue"里写"无"并说明原因；Dependabot 自动开的 PR 不走模板
 - 分支命名：`feat/123-简短描述`、`fix/124-简短描述`
 - 尽量小：理想情况一个 PR 一天内合并
 - 合并方式：Squash
